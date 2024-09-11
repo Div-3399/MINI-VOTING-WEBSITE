@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Online voting system</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="">
+                </div>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="Mini voting.pptx voting.pptx">About</a></li>
+                    <li><a href="routes/register.html">Register</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <!-- <li><a href="result.html">Result</a></li> -->
+                </ul>
+            </nav>
+        </header>
+        <center>
+            <div id="headerSection">
+                <h1>Online Voting System</h1>
+            </div>
+            <hr>
+            
+            <div id="bodySection">
+                <form action="api/login.php" method="post">
+                    <h2>Login</h2>
+                    <input type="number" name="mobile" placeholder="Enter mobile"><br><br>
+                    <input type="password" name="password" placeholder="Enter Password"><br><br>
+                    <select name="role" id="dropbox">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select><br><br>
+                    <button id="loginbtn" type="submit">Login</button><br><br>
+                    New User ? <a href="routes/register.html"> Register here</a>
+                </form>
+            </div>
+        </center>
+        <footer class="flex-all-center">
+            <p>Copyright &copy; V-vote</p>
+        </footer>
+        </body>
+        </html>
